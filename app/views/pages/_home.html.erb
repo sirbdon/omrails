@@ -1,0 +1,22 @@
+
+<% if user_signed_in? %>
+	<div class ="alert alert-success">
+		You're Logged In!
+	</div>
+
+<% else %>	
+	<div class="hero-unit">
+		<h1>Welcome to Brandon's Shit App!</h1>
+		<p>Just typing a bunch of crap while OMR guy talks</p>
+		<p> 
+			Visit 
+
+			<%= link_to "nameless", "http://namelessbtc.com"%>
+
+		</p>
+
+		<p> <%= link_to "Sign Up!", new_user_registration_path, class: "btn btn-primary btn-large" %></p>
+
+
+	</div>
+<% end %>	
