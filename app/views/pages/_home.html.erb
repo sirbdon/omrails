@@ -1,10 +1,5 @@
 
-<% if user_signed_in? %>
-	<div class ="alert alert-success">
-		You're Logged In!
-	</div>
-
-<% else %>	
+<% unless user_signed_in? %>
 	<div class="hero-unit">
 		<h1>Welcome to Brandon's Shit App!</h1>
 		<p>Just typing a bunch of crap while OMR guy talks</p>
